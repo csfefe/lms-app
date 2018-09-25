@@ -1,0 +1,13 @@
+{
+  "public": {
+    "applyCount": 3,
+    "documentExtensions": [
+      "doc",
+      "docx",
+      "pdf"
+    ]
+  },
+  "admin": [],
+  "storageRootPath": "/tmp",
+  "initDb": false
+}

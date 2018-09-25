@@ -1,0 +1,8 @@
+#intellij idea workspace
+.idea*
+*.ipr
+*.iws
+*.iml
+
+#node modules
+node_modules/

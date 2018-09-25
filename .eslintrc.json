@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:meteor/recommended",
+    "@meteorjs/eslint-config-meteor"
+  ],
+  "parserOptions": {
+    "allowImportExportEverywhere": true
+  },
+  "plugins": [
+    "meteor"
+  ],
+  "settings": {
+    "import/resolver": {
+      "meteor": {
+        "paths": [
+          "client",
+          "imports",
+          "server"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "meteor/audit-argument-checks": "off",
+    "no-underscore-dangle": "off",
+    "react/no-array-index-key": "off",
+    "import/extensions": [
+      "off",
+      "never"
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ]
+      }
+    ],
+    "no-console": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ]
+  }
+}
